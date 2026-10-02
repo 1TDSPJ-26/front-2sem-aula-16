@@ -67,7 +67,7 @@ export default function Produtos() {
         <p>Tem certeza que deseja excluir o produto</p>
         <div style={{ display: "flex", gap: "10px", justifyContent: "flex-end", marginTop: "15px" }}>
           <button onClick={()=>dialogRef.current?.close()} style={{ background: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer" }}>Cancelar Exclusão</button>
-          <button onClick={()=>handleDelete} style={{ background: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer" }}>Excluir</button>
+          <button onClick={()=>handleDelete(idExclusivo)} style={{ background: "gray", color: "black", border: "none", padding: "5px 10px", cursor: "pointer" }}>Excluir</button>
         </div>
       </dialog>
       <p>Confira abaixo a lista de itens cadastrados no sistema:</p>
@@ -109,7 +109,7 @@ export default function Produtos() {
               <td>{item.descricao}</td>
               <td>
                 <Link to={`/editar-produto/${item.id}`}><Editar className='w-10 h-10'/></Link>|
-                <Excluir style={{cursor:'pointer'}} onClick={()=> abrirModal(item.id)} className='w-10 h-10'/>
+                <Excluir style={{cursor:'pointer'}} onClick={() => abrirModal(item.id)} className='w-10 h-10'/>
               </td>
             </tr>
           ))}
