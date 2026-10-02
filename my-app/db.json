@@ -13,6 +13,20 @@
       "preco": 120,
       "estoque": 25,
       "avatar": "https://picsum.photos/id/2/200/300"
+    },
+    {
+      "id": "r5snuuPvM6c",
+      "nome": "NITRO ACER",
+      "preco": "2000",
+      "estoque": "5",
+      "avatar": "https://picsum.photos/id/3/200/300"
+    },
+    {
+      "id": "w2-wq-KWDCk",
+      "nome": "monitor",
+      "preco": "500",
+      "estoque": "2",
+      "avatar": "https://picsum.photos/id/2/200/300"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

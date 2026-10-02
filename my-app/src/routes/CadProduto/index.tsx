@@ -65,6 +65,12 @@ export default function CadProduto() {
                     </div>
 
                     <div>
+                        <label htmlFor="avatar">Imagem do produto</label>
+                        <input type="url" id="avatar" {...register("avatar", { required: "É obrigatório uma imagem para o produto!", minLength: { value: 10, message: "Permitido apenas nomes com no mínimo 10 caracteres!" } })} />
+                        {errors.nome?.message && <span style={{ color: "#ff0000" }}>{errors.nome?.message}</span>}
+                    </div>
+
+                    <div>
                         <button type="submit">Cadastrar</button>
                     </div>
 
