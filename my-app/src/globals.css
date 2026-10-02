@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer {
+
+    body {
+        @apply h-screen w-screen;
+    }
+
+    main {
+        @apply bg-blue-400
+    }
+
+    .container {
+        @apply flex flex-col justify-between h-full w-max
+    }
+
+    .frmCad {
+        @apply w-[80%] bg-amber-50 mx-auto my-auto border p-5;
+    }
+}
