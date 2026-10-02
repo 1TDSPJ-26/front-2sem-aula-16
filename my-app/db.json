@@ -11,8 +11,22 @@
       "id": "2",
       "nome": "Mouse Óptico",
       "preco": 120,
-      "estoque": 25,
+      "estoque": "250",
       "avatar": "https://picsum.photos/id/2/200/300"
+    },
+    {
+      "id": "kX4d_QPBNgw",
+      "nome": "MacBook",
+      "preco": "9000",
+      "estoque": "20",
+      "avatar": "https://picsum.photos/id/3/200/300"
+    },
+    {
+      "id": "4_VCbqJWd_0",
+      "nome": "Monitor",
+      "preco": "550",
+      "estoque": "10",
+      "avatar": "https://picsum.photos/id/4/200/300"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
