@@ -9,6 +9,7 @@ import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
 import UsuariosGit from './routes/UsuariosGit/index.tsx'
 import CadProduto from './routes/CadProduto/index.tsx'
+import "./Globals.css"
 
 const router = createBrowserRouter([
   { 

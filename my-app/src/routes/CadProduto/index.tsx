@@ -37,7 +37,7 @@ export default function CadProduto() {
         <main>
             <section>
                 <h2>Cadastro de produto</h2>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmit)} className="formCad">
                     <fieldset>
                         <legend>Dados do Produto</legend>
                         <div>
@@ -47,13 +47,18 @@ export default function CadProduto() {
                         </div>
                         <div>
                             <label htmlFor="preco">Preço do Produto</label>
-                            <input type="number" step={0.1} id="preco" {...register("preco", { required: "É obrigatório um valor para o produto", min: { value: 1, message: "Permitido apenas valores maiores que 0" } })} />
+                            <input type="number" step={0.1} id="preco" {...register("preco", { valueAsNumber: true, required: "É obrigatório um valor para o produto", min: { value: 1, message: "Permitido apenas valores maiores que 0" } })} />
                             {errors.preco?.message && <span style={{ color: "#ff0000" }}>{errors.preco?.message}</span>}
                         </div>
                         <div>
                             <label htmlFor="descricao">Descrição do Produto</label>
                             <input type="text" id="descricao" {...register("descricao", { required: "É obrigatório uma descrição para o produto", minLength: { value: 3, message: "Permitido apenas descrições com no mínimo 3 caractéres" } })} />
                             {errors.descricao?.message && <span style={{ color: "#ff0000" }}>{errors.descricao?.message}</span>}
+                        </div>
+                        <div>
+                            <label htmlFor="avatar">Imagem do Produto</label>
+                            <input type="url" id="avatar" {...register("avatar", { required: "É obrigatório uma imagem para o produto", minLength: { value: 10, message: "Permitido apenas imagens com no mínimo 10 caractéres" } })} />
+                            {errors.avatar?.message && <span style={{ color: "#ff0000" }}>{errors.avatar?.message}</span>}
                         </div>
                         <div>
                             <button type="submit">Cadastrar Produto</button>

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer{
+    body{
+        @apply h-screen w-screen;
+    }
+
+    main{
+        @apply bg-blue-500;
+    }
+
+    .formCad{
+        @apply w-[80%] bg-amber-200 mx-auto my-auto border-2 p-6;
+
+        & fieldset{
+            @apply bg-red-400;
+        }
+    }
+
+    .container{
+        @apply flex flex-col justify-between h-screen w-screen;
+    }
+}

@@ -13,6 +13,13 @@
       "preco": 189.5,
       "descricao": "Mede batimentos cardíacos, conta passos e mostra notificações.",
       "avatar": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=120&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "WXDYVRpT6n0",
+      "nome": "Cadeira Gamer X3PT0",
+      "preco": 1499,
+      "descricao": "Cadeira Gamer boladona, se você sentar, não sai mais",
+      "avatar": "https://picsum.photos/200"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
