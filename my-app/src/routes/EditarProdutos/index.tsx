@@ -4,6 +4,7 @@ import type { TipoProduto } from "../../types/types";
 import { useForm } from "react-hook-form";
 
 export default function EditarProdutos() {
+  document.title = "Editar Produtos";
 
   const { id } = useParams<{ id: string }>();
 

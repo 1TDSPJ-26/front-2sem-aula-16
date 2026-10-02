@@ -20,6 +20,13 @@
       "preco": 210,
       "estoque": 8,
       "avatar": "https://picsum.photos/id/3/200/300"
+    },
+    {
+      "id": "eGL9sx-dsZc",
+      "nome": "sadfd",
+      "preco": "10",
+      "estoque": "1",
+      "avatar": ""
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
