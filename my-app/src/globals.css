@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer{
+    body{
+        @apply h-screen w-screen;
+    }
+    .container{
+        @apply flex-col justify-between h-screen w-screen;
+    }
+
+    .frmCad{
+        @apply w-[80%] bg-amber-50 mx-auto my-auto border p-10
+
+        &fieldset{
+            @apply bg-blue-300;
+
+            & legend{
+                @apply bg-blue-600 rounded-2xlp-1 border;
+            }
+        }
+    }
+}

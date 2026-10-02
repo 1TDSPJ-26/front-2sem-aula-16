@@ -8,6 +8,7 @@ import EditarProdutos from './routes/EditarProdutos'
 import Error from './routes/Error'
 import UsuariosGit from './routes/UsuariosGit'
 import CadProduto from './routes/CadProduto'
+import "./globals.css";
 
 const router = createBrowserRouter([
   {
