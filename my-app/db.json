@@ -27,6 +27,13 @@
       "preco": "900",
       "estoque": "10",
       "avatar": "https://picsum.photos/id/4/200/300"
+    },
+    {
+      "id": "s_WTp-nAao4",
+      "nome": "OIAMIGO",
+      "preco": "290",
+      "estoque": "10",
+      "avatar": "https://picsum.photos/id/10/200/300"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
