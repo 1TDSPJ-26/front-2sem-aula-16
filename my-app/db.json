@@ -2,7 +2,7 @@
   "produtos": [
     {
       "id": "1",
-      "nome": "Notebook HP",
+      "nome": "Notebook HP Pró",
       "preco": 3500,
       "estoque": 10,
       "avatar": "https://picsum.photos/id/1/200/300"
