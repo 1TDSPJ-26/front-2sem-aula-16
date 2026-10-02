@@ -7,7 +7,7 @@ export default function EditarProduto() {
 
     const {id} = useParams<{id:string}>();
 
-    const {register, reset, handleSubmit, setValue, formState:{errors}} = useForm<Produto>({
+    const {register, reset, handleSubmit, formState:{errors}} = useForm<Produto>({
         defaultValues:{id:"", nome:"", preco:0, descricao:"", avatar:""},
         mode: "onChange"
     });

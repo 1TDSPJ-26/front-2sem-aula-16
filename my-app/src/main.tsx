@@ -8,6 +8,7 @@ import Produtos from './routes/Produtos/index.tsx'
 import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
 import UsuariosGit from './routes/UsuariosGit/index.tsx'
+import CadProduto from './routes/CadProduto/index.tsx'
 
 const router = createBrowserRouter([
   { 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/editar-produto/:id',
         element: <EditarProduto />
+      },
+      {
+        path: '/cadastrar-produto',
+        element: <CadProduto />
       },
       {
         path: '/users/git',
