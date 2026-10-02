@@ -40,8 +40,8 @@ export default function CadProduto() {
 
     return (
         <main>
-            <h2>Cadastrar Produtos</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <h2>Cadastro Produtos</h2>
+            <form onSubmit={handleSubmit(onSubmit)} className="frmCad">
                 <fieldset>
                     <legend>Dados do Produto</legend>
                     <div>

@@ -7,10 +7,10 @@ import Rodape from './components/Rodape'
 
 export default function App() {
   return (
-    <>
+    <div className="container">
       <Cabecalho />
       <Outlet />
       <Rodape />
-    </>
+    </div>
   )
 }
