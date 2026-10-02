@@ -7,7 +7,7 @@ export default function EditarProdutos() {
 
   const { id } = useParams<{ id: string }>();
 
-  const { register, reset,handleSubmit, formState: { errors } } = useForm<TipoProduto>({
+  const { register, reset, handleSubmit, formState: { errors } } = useForm<TipoProduto>({
     defaultValues: { id: "", nome: "", preco: 0, estoque: 0, avatar: "" },
     mode: "onChange"
   });
@@ -36,12 +36,12 @@ export default function EditarProdutos() {
 
   const navigate = useNavigate();
 
-  const onSubmit  = async (data:TipoProduto)=>{
+  const onSubmit = async (data: TipoProduto) => {
     try {
-      
+
       const response = await fetch(`http://localhost:3001/produtos/${data.id}`, {
         method: "PUT",
-        headers:{
+        headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data)
@@ -69,7 +69,7 @@ export default function EditarProdutos() {
           <legend>Dados do Produto</legend>
           <div>
             <label htmlFor="nome">Nome do Produto </label>
-            <input type="text" id="nome" {...register("nome", { required: "É obrigatório um nome para o produto!", minLength:{value:3,message:"Permitido apenas nomes com no mínimo 3 caracteres!"} })} />
+            <input type="text" id="nome" {...register("nome", { required: "É obrigatório um nome para o produto!", minLength: { value: 3, message: "Permitido apenas nomes com no mínimo 3 caracteres!" } })} />
             {errors.nome?.message && <span style={{ color: "#ff0000" }}>{errors.nome?.message}</span>}
           </div>
           <div>
@@ -83,9 +83,9 @@ export default function EditarProdutos() {
             {errors.estoque?.message && <span style={{ color: "#ff0000" }}>{errors.estoque?.message}</span>}
           </div>
 
-              <div>
-                <button type="submit">ATUALIZAR</button>
-              </div>
+          <div>
+            <button type="submit">ATUALIZAR</button>
+          </div>
 
         </fieldset>
       </form>
