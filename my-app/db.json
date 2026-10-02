@@ -13,6 +13,20 @@
       "preco": 120,
       "estoque": 25,
       "avatar": "https://picsum.photos/id/2/200/300"
+    },
+    {
+      "id": "YbcISTGsWnQ",
+      "nome": "Notebook ACCER IX2",
+      "preco": "5200",
+      "estoque": "2",
+      "avatar": "https://picsum.photos/id/3/200/300"
+    },
+    {
+      "id": "u0fA9dnXHcc",
+      "nome": "Monitor 14'",
+      "preco": "550",
+      "estoque": "10",
+      "avatar": "https://picsum.photos/id/5/200/300"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
