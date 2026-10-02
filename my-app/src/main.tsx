@@ -7,6 +7,7 @@ import Produtos from './routes/Produtos'
 import EditarProdutos from './routes/EditarProdutos'
 import Error from './routes/Error'
 import UsuariosGit from './routes/UsuariosGit'
+import CadProduto from './routes/CadProduto'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
       { path: '/', element: <Home/> },
       { path: '/produtos', element: <Produtos/> },
       { path: '/editar-produtos/:id', element: <EditarProdutos/> },
-      { path: '/users/git', element: <UsuariosGit/> }
+      { path: '/users/git', element: <UsuariosGit/> },
+      { path: '/cad-produto/', element: <CadProduto/> }
     ]
   }
 ])
