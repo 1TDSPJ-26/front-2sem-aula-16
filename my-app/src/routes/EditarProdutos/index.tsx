@@ -1,7 +1,20 @@
 import { useEffect } from "react";
 import { useParams } from "react-router";
 import type { TipoProduto } from "../../types/types";
-import { useForm } from "react-hook-form";
+import { listaProdutos } from "../../data/ListaProdutos";
+
+//Criando uma interface para o tipo de dados que o componente vai receber
+//interface Produto {
+//  id: number;
+//  nome: string;
+//  preco: number
+//}
+
+//Criando um tipo de dados para o componente
+
+
+//Criando um array de produtos
+
 
 export default function EditarProdutos() {
 
@@ -12,26 +25,10 @@ export default function EditarProdutos() {
     mode: "onChange"
   });
 
-  useEffect(() => {
-
-    const carregaProduto = async () => {
-      try {
-
-        const response = await fetch(`http://localhost:3001/produtos/${id}`);
-
-        if (!response.ok) {
-          throw new Error(`Falha na requisição do produto... ${response.status} - ${response.statusText}`);
-        }
-
-        const data: TipoProduto = await response.json();
-        console.log(data);
-        reset(data);
-
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    carregaProduto();
+  useEffect(() => {    
+    const prodEncontrado = listaProdutos.find( (p)=> p.id === Number(id) );
+    setProduto(prodEncontrado!);
+    
   }, [])
 
   return (
