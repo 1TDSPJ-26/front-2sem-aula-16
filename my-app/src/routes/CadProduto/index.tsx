@@ -59,7 +59,9 @@ export default function CadProduto() {
                         <input type="number" step={1} id="estoque" {...register("estoque", { required: "É obrigatório digitar um valor!", min: { value: 1, message: "Permitidos apenas valores maiores que zero!" } })} />
                         {errors.estoque?.message && <span style={{ color: "#ff0000" }}>{errors.estoque?.message}</span>}
                     </div>
-
+                    <label htmlFor="nome">Imagem do Produto </label>
+                    <input type="url" id="avatar" {...register("nome", { required: "É obrigatório uma imagem para o produto!", minLength: { value: 10, message: "Permitido apenas nomes com no mínimo 3 caracteres!" } })} />
+                    {errors.avatar?.message && <span style={{ color: "#ff0000" }}>{errors.avatar?.message}</span>}
                     <div>
                         <button type="submit">CADASTRAR</button>
                     </div>
